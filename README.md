@@ -1,1 +1,1 @@
-# geometric
+Tools to deal with geometrical problems.
