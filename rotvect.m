@@ -6,12 +6,14 @@ function R = rotvect(a, b)
 %
 % INPUT:
 %
-% a           Rotate-from vector
-% b           Rotate-to vector
+% a           Rotate-from vector [defaulted]
+% b           Rotate-to vector [defaulted]
 %
 % OUTPUT:
 %
 % R           3x3 rotation matrix
+%             Using the default vectors, R is the rotation matrix from
+%             z-axis to x-axis
 %
 % SEE ALSO:
 %
@@ -40,6 +42,10 @@ function R = rotvect(a, b)
 % Last modified by Huda Al Alawi - October 8th, 2021
 % Originally implemented by Lucas Sawade (lsawade@princeton.edu) using Python
 %
+
+% Define default values
+defval('a', [0 0 1])
+defval('b', [1 0 0])
 
 % Need to normalize the vectors to make this algorithm works
 anorm = a./norm(a,2);
