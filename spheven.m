@@ -1,5 +1,5 @@
 function points = spheven(num, choice)
-% points = spheven(num, r)
+% points = spheven(num, choice)
 %
 % Generates a set of equidistant points on a unit sphere using Fibonacci 
 % sphere algorithm.
