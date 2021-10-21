@@ -43,7 +43,7 @@ y = r.*sin(th);
 % Plot if wanted
 if choice ==1
     figure
-    plot3(x, y, z, '.')
+    plot3(x, y, z, '.k')
     xlabel('x')
     ylabel('y')
     zlabel('z')
